@@ -14,7 +14,7 @@ The CLI program takes two arguments:
   
 `python most_active_cookie.py test_cases.csv -d 2018-12-08`
 
-The test suite may be run using an IDE like Pycharm or by using the following command to run all available (9) tests:
+The test suite may be run using an IDE like Pycharm or by using the following command to run all available (8) tests:
 
 `python most_active_cookie_tester.py`
 
