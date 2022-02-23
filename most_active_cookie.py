@@ -17,13 +17,16 @@ class CookieProcessor:
         :return: set of most active cookies, used in the tester
         """
         most_active_cookies = set()
+        res = set()
         if date in self.cookies_dict:
             max_occurrence = max(self.cookies_dict[date].values())
             most_active_cookies = sorted((k, -v) for k,v in self.cookies_dict[date].items())
             for cookie, val in most_active_cookies:
                 if -val == max_occurrence:
                     print(cookie)
-        return most_active_cookies
+                    res.add(cookie)
+        
+        return res
 
     def process_cookies(self, log_path):
         """
